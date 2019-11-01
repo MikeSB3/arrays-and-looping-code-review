@@ -1,19 +1,25 @@
 //Business Logic
 var userOutput = function(userInput) {
-  if (userInput === 3) {
-    return ("I'm sorry, Dave. I'm afraid I can't do that.");
-  } else if (userInput === 2) {
-    return ("Boop!");
-  } else if (userInput === 1) {
-    return ("Beep!");
-  } else {
-    return (userInput);
-  }
+  var arrays = []
+  var threes = []
+
+  for (var i = 0; i < userInput; i++) {
+    arrays.push(userInput);
+  };
+  console.log(arrays[0]);
+
+  arrays.forEach(function(userInput) {
+    if (arrays.includes(3)) {
+      threes.push("I'm sorry, Dave. I'm afraid I can't do that.");
+    }
+  });
+  console.log(threes[0]);
 
 };
 
 //User Logic
 $(document).ready(function() {
+
   $("form#mainForm").submit(function(event) {
     event.preventDefault();
     var number = parseInt($("#userInput").val());
