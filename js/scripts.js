@@ -1,20 +1,19 @@
 //Business Logic
 var userOutput = function(userInput) {
   var arrays = []
-  var threes = []
 
-  for (var i = 0; i < userInput; i++) {
-    arrays.push(userInput);
-  };
-  console.log(arrays[0]);
-
-  arrays.forEach(function(userInput) {
-    if (arrays.includes(3)) {
-      threes.push("I'm sorry, Dave. I'm afraid I can't do that.");
+  for (var i = 0; i <= userInput; i++) {
+    if (i.toString().includes("3") ) {
+      arrays.push("I'm sorry, Dave. I'm afraid I can't do that.");
+    } else if (i.toString().includes("2")) {
+      arrays.push("Boop!");
+    } else if (i.toString().includes("1")) {
+      arrays.push("Beep!");
+    } else {
+      arrays.push(i);
     }
-  });
-  console.log(threes[0]);
-
+  }
+  return arrays
 };
 
 //User Logic
