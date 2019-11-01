@@ -22,6 +22,7 @@ This webpage allows you to enter a number and get back a list of numbers from 0 
 * Or click on the GitHub pages link below to view
 
 ## GitHub Pages
+https://mikesb3.github.io/arrays-and-looping-code-review/
 
 ## Technologies Used
 * HTML
