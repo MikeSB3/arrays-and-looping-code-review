@@ -23,10 +23,16 @@ $(document).ready(function() {
 
   $("form#mainForm").submit(function(event) {
     event.preventDefault();
+
     var number = parseInt($("#userInput").val());
     var result = userOutput(number);
     $("#entered").text(result);
-    $(".submission").show();
+    $(".submission").fadeIn(2000).show();
+
+    $("img").click(function(){
+      $("img").animate({opacity: 0}, 1000);
+      $("img").animate({opacity: 1}, 1000);
+    });
   });
 
 });
