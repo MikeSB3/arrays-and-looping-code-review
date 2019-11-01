@@ -6,6 +6,10 @@
   display: none;
 }
 
+#entered {
+  letter-spacing: 0.05em;
+}
+
 img {
   width: 50%;
   height: auto;

@@ -4,13 +4,13 @@ var userOutput = function(userInput) {
 
   for (var i = 0; i <= userInput; i++) {
     if (i.toString().includes("3") ) {
-      arrays.push("I'm sorry, Dave. I'm afraid I can't do that.");
+      arrays.push(" I'm sorry, Dave. I'm afraid I can't do that.");
     } else if (i.toString().includes("2")) {
-      arrays.push("Boop!");
+      arrays.push(" Boop!");
     } else if (i.toString().includes("1")) {
-      arrays.push("Beep!");
+      arrays.push(" Beep!");
     } else {
-      arrays.push(i);
+      arrays.push(" " + i);
     }
   }
   return arrays
