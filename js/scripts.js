@@ -10,7 +10,7 @@ var userOutput = function(userInput) {
     } else if (i.toString().includes("1")) {
       arrays.push("Beep!");
     } else {
-      arrays.push(i);
+      arrays.push(" " + i);
     }
   }
   return arrays
@@ -23,7 +23,7 @@ $(document).ready(function() {
     event.preventDefault();
     var number = parseInt($("#userInput").val());
     var result = userOutput(number);
-    $("#entered").append(result);
+    $("#entered").text(result);
     $(".submission").show();
   });
 
