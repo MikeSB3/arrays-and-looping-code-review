@@ -24,6 +24,7 @@ $(document).ready(function() {
     var number = parseInt($("#userInput").val());
     var result = userOutput(number);
     $("#entered").append(result);
+    $(".submission").show();
   });
 
 });
