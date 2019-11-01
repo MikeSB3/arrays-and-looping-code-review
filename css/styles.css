@@ -1,6 +1,17 @@
+.panel-body {
+  text-align: center;
+}
+
 .submission {
   display: none;
 }
-.panel-body {
-  text-align: center;
+
+img {
+  width: 50%;
+  height: auto;
+}
+
+img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }

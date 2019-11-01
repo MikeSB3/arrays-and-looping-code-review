@@ -10,11 +10,13 @@ var userOutput = function(userInput) {
     } else if (i.toString().includes("1")) {
       arrays.push("Beep!");
     } else {
-      arrays.push(" " + i);
+      arrays.push(i);
     }
   }
   return arrays
 };
+
+
 
 //User Logic
 $(document).ready(function() {

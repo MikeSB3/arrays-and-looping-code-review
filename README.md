@@ -5,7 +5,7 @@
 ## By Michael Berryman
 
 ## Description
-This webpage allows you to enter a number and get back an answer based on your number.
+This webpage allows you to enter a number and get back a list of numbers from 0 to the number you input. Numbers containing 3, 2, or 1 will be transformed in to a string.
 
 ## Specifications
 | Behavior | Input | Output|
