@@ -1,12 +1,15 @@
 //Business Logic
 
+
+
+
 //User Logic
 $(document).ready(function() {
 
-  $("#form").submit(function(event) {
+  $("#mainForm").submit(function(event) {
     event.PreventDefault();
-    var userInput = $("input#userInput").val();
-    $(".submission").append(userInput);
+    var userInput = $("#userInput").val();
+    $("#entered").append(userInput);
   });
 
 });
