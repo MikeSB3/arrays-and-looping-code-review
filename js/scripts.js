@@ -1,15 +1,15 @@
 //Business Logic
-
-
-
+var userOutput = function(userInput) {
+  return("1");
+}
 
 //User Logic
 $(document).ready(function() {
-
-  $("#mainForm").submit(function(event) {
-    event.PreventDefault();
-    var userInput = $("#userInput").val();
-    $("#entered").append(userInput);
+  $("form#mainForm").submit(function(event) {
+    event.preventDefault();
+    var number = parseInt($("#userInput").val());
+    var result = userOutput(number);
+    $("#entered").append(result);
   });
 
 });
